@@ -10,30 +10,27 @@
 </head>
 <body>
     <header>
-        <div class="logo">
           <h1>CLIMITA</h1>
-          <img src="https://raw.githubusercontent.com/JoseGarcia2001/Simple-Weather-App/main/src/assets/cloud.png" alt="Logo">
-        </div>
 
         <ul>
           <li>
               <a target="_blank" href="https://openweathermap.org/">
               <img src="https://josegarcia2001.github.io/Simple-Weather-App/src/assets/api.png" alt="API">
-              Conoce el API
+              <p>Conoce el API</p>
             </a>
           </li>
 
           <li>
             <a target="_blank" href="https://www.linkedin.com/in/rodrigo-angel-zucchini-109446212/">
             <img src="https://josegarcia2001.github.io/Simple-Weather-App/src/assets/contact.png" alt="Contáctame">
-            Contáctame
+            <p>Contáctame</p>
             </a>
           </li>
   
           <li>
             <a target="_blank" href="">
               <img src="https://josegarcia2001.github.io/Simple-Weather-App/src/assets/github.png" alt="Repositorio">
-              Mira el código
+              <p>Mira el código</p>
             </a>
           </li>
         </ul>
@@ -41,13 +38,19 @@
       </header>
 
       <main>
-        <div class="input-container">
-            <form action="">
-              <input type="text" autocomplete="country-name" placeholder="Ingresa nombre de tu ciudad">
-              <button id="buttom">¡Consultar!</button>    
-            </form>
+        <div class="search-form">
+          <form id="search-form">
+            <div class="searchbox">
+              <input type="text" autocomplete="off" placeholder="Buscar ciudad..." class="search" id="searchbox" checked/>
+              <button>BUSCAR</button>
+              <button class="remove" id="remove">LIMPIAR</button>
+            </div>
+          </form>
         </div>
-        <div class="cards-container">
+
+        <div id="app" class="app">
+
+        </div>
       </main>
       <script  src="./js/index.js"></script>
 </body>
